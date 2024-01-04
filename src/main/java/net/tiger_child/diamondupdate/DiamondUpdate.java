@@ -32,13 +32,13 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DiamondUpdate.MOD_ID)
 public class DiamondUpdate {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "diamondupdate";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public DiamondUpdate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -60,6 +60,21 @@ public class DiamondUpdate {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
+            event.accept(ModItems.REDDIAMOND);
+            event.accept(ModItems.ORANGEDIAMOND);
+            event.accept(ModItems.YELLOWDIAMOND);
+            event.accept(ModItems.GREENDIAMOND);
+            event.accept(ModItems.PURPLEDIAMOND);
+            event.accept(ModItems.PINKDIAMOND);
+            event.accept(ModItems.BROWNDIAMOND);
+            event.accept(ModItems.BLACKDIAMOND);
+            event.accept(ModItems.GRAYDIAMOND);
+            event.accept(ModItems.WHITEDIAMOND);
+
+        }
 
     }
 
