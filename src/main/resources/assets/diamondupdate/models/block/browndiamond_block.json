@@ -1,0 +1,10 @@
+{
+
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+
+    "all": "diamondupdate:block/browndiamond_block"
+
+  }
+
+}

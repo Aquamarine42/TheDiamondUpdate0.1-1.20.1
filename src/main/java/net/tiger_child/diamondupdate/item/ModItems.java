@@ -1,10 +1,11 @@
-package net.tiger_child.diamondupdate;
+package net.tiger_child.diamondupdate.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.tiger_child.diamondupdate.DiamondUpdate;
 
 public class ModItems {
 

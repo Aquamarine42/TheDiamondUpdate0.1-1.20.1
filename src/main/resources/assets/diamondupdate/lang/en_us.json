@@ -9,6 +9,19 @@
   "item.diamondupdate.browndiamond": "Brown Diamond",
   "item.diamondupdate.blackdiamond": "Black Diamond",
   "item.diamondupdate.graydiamond": "Gray Diamond",
-  "item.diamondupdate.whitediamond": "White Diamond"
+  "item.diamondupdate.whitediamond": "White Diamond",
+
+  "creativetab.diamond_tab": "Diamond Tab",
+
+  "block.diamondupdate.reddiamond_block": "Block of Red Diamond",
+  "block.diamondupdate.orangediamond_block": "Block of Orange Diamond",
+  "block.diamondupdate.yellowdiamond_block": "Block of Yellow Diamond",
+  "block.diamondupdate.greendiamond_block": "Block of Green Diamond",
+  "block.diamondupdate.purplediamond_block": "Block of Purple Diamond",
+  "block.diamondupdate.pinkdiamond_block": "Block of Pink Diamond",
+  "block.diamondupdate.browndiamond_block": "Block of Brown Diamond",
+  "block.diamondupdate.blackdiamond_block": "Block of Black Diamond",
+  "block.diamondupdate.graydiamond_block": "Block of Gray Diamond",
+  "block.diamondupdate.whitediamond_block": "Block of White Diamond"
 
 }

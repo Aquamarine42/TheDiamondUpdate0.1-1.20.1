@@ -27,6 +27,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.tiger_child.diamondupdate.block.ModBlocks;
+import net.tiger_child.diamondupdate.item.ModCreativeModeTabs;
+import net.tiger_child.diamondupdate.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -40,18 +43,18 @@ public class DiamondUpdate {
 
         ModItems.register(modEventBus);
 
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
-        
+        ModBlocks.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
+        ModCreativeModeTabs.register(modEventBus);
+
+        modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
